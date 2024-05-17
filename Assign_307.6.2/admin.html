@@ -1,0 +1,154 @@
+<!DOCTYPE html>     <!-- Creating a wireframe for Admin page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wireframe_Admin_Page</title>
+    <link href="C:\Users\amous\OneDrive\Desktop\PerScholas SE  2024-RTT-21\HTML_CSS\Bootstrap\bootstrap-5.3.3-dist\css\bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="C:\Users\amous\OneDrive\Desktop\PerScholas SE  2024-RTT-21\HTML_CSS\Bootstrap\bootstrap-5.3.3-dist\js\bootstrap.min.js"></script>
+</head>
+<body style="color:rgb(165, 165, 39)">
+    <h1>Adminstrator Page wireframe</h1>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    <!-- INSERT A NAVIGATION BAR -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="color: brown;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <!-- INSERT A container  -->
+
+      <div class="container-fluid" style="color: rgb(37, 61, 53);">
+        
+      
+      <!-- INSERT A  -->
+      <!-- INSERT A LIST GROUP -->
+
+      
+      <div class="row">
+        <div class="col-4">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <h4 id="list-item-1">Item 1</h4>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+                <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+              </div>
+            <h4 id="list-item-2">Item 2</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Default checkbox
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checked checkbox
+                </label>
+              </div>
+            <h4 id="list-item-3">Item 3</h4>
+            <label for="customRange3" class="form-label">Available range</label>
+<input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+            <h4 id="list-item-4">Item 4</h4>
+            <label for="disabledRange" class="form-label">Disabled range</label>
+<input type="range" class="form-range" id="disabledRange" disabled>
+          </div>
+        </div>
+      </div>
+<!-- INSERT A PROGRESS -->
+
+<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-success" style="width: 25%">25%</div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+  </div>
+
+
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- <button  type="btn" class="btn btn-primary"> Click Me</button><br><br>
+    
+    <div class="container-fluid">           
+        <div class="row">
+           <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="border: 1px solid blue;">Content</div>
+           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="border: 1px solid red;"> Content </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="border: 1px solid blue;"> Content </div>
+        </div>
+     </div>  -->
+</body>
+</html>
